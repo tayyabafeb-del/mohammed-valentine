@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>For Mohammed ❤️</title>
+<style>
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    color: white;
+    margin-top: 100px;
+}
+
+
+h1 {
+    font-size: 40px;
+}
+
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+
+#yesBtn {
+    background-color: #28a745;
+    color: white;
+}
+
+
+#noBtn {
+    background-color: #dc3545;
+    color: white;
+    position: absolute;
+}
+
+
+.heart {
+    font-size: 30px;
+    animation: heartbeat 1s infinite;
+}
+
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.2); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+</style>
+</head>
+
+
+<body>
+
+
+<h1>Mohammed ❤️</h1>
+<p class="heart">💖 💕 💖 💕 💖</p>
+
+
+<h2>Will you be my Valentine today, tomorrow, and forever? 💍</h2>
+
+
+<button id="yesBtn" onclick="yesClicked()">Yes ❤️</button>
+<button id="noBtn" onmouseover="moveButton()">No 😜</button>
+
+
+<p id="message"></p>
+
+
+<script>
+function yesClicked() {
+    document.getElementById("message").innerHTML =
+    "Yayyyy 🥰 You are my forever, Mohammed! I love you endlessly ❤️ – Your Tayyaba";
+}
+
+
+function moveButton() {
+    var button = document.getElementById("noBtn");
+    var x = Math.random() * window.innerWidth;
+    var y = Math.random() * window.innerHeight;
+    button.style.left = x + "px";
+    button.style.top = y + "px";
+}
+</script>
+
+
+</body>
+</html>
